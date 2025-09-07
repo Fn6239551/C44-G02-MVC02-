@@ -6,6 +6,8 @@ namespace session1
     {
         public static void Main(string[] args)
         {
+
+
             var WebApplicationBuilder = WebApplication.CreateBuilder(args);
             #region Configure Services
             WebApplicationBuilder.Services.AddControllersWithViews();
