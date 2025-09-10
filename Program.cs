@@ -25,11 +25,12 @@ namespace session1
             //  //  var name = context.GetRouteValue("name");
             //    await context.Response.WriteAsync($"Hello {context.Request.RouteValues["name"]}");
             //});
+            app.UseStaticFiles();
             app.MapControllerRoute(
                 
                 name: "default",
                 pattern: "{controller}/{action}/{id?}",
-                defaults: new { controller = "Movies", action = "Index" }
+                defaults: new { controller = "Home", action = "Index" }
                 // constraints: new { id=@"\d{2}" }
                 );
             app.Run();
